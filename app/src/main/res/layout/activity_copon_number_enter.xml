@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmountEnterActivity"
+    android:background="#ffffff">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:text="    Next    "
+        android:id="@+id/ok"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/right_arrow"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:background="#FF0033"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/copon_code"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:hint="Copon Code"
+        android:layout_centerVertical="true"
+        android:inputType="number"
+        android:maxLength="10"
+        android:gravity="center_horizontal"/>
+</RelativeLayout>

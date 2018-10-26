@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmountEnterActivity"
+    android:background="#ffffff">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:text="    Next    "
+        android:id="@+id/next"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/right_arrow"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:background="#FF0033"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/amount_text"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:hint="Please Enter Amount"
+        android:layout_marginTop="150dp"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:paddingLeft="-40dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/receipt_no_text"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:hint="Please Enter Receipt No."
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:maxLength="10"
+        android:paddingLeft="-40dp"
+        android:layout_below="@+id/amount_text"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/amount_text"
+        android:layout_alignEnd="@+id/next"
+        android:text="( RM )"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

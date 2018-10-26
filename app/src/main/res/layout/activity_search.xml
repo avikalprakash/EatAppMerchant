@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/relative"
+            android:background="#FF0033">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/back"
+                android:src="@drawable/back_arrow"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:layout_toEndOf="@+id/back"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompletedtextview"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight=".9"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:background="@drawable/search_bg"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:hint="Search for member"
+                android:padding="10dp" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</LinearLayout>
